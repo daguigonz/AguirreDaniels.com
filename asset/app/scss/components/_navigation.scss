@@ -1,0 +1,36 @@
+// Navigation
+// ----------
+
+@import '../helpers/variables';
+
+.pure-menu.pure-menu-open.pure-menu-fixed {
+  background-color: $midnight-blue;
+  border-bottom: 0;
+  padding: .3em 0;
+  z-index: 3;
+
+  a {
+    color: lighten($blue, 30%);
+  }
+
+  a:hover,
+  a:focus,
+  .pure-menu-selected a {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .pure-menu-heading {
+    color: #fff;
+    display: inline-block;
+    font-size: 120%;
+    font-weight: 400;
+    margin: 0;
+    vertical-align: middle;
+    zoom: 1;
+  }
+
+  ul {
+    float: right;
+  }
+}

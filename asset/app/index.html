@@ -1,0 +1,234 @@
+<!doctype html>
+<!--[if lt IE 9]>      <html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Renueva tu cocina - Santa Catalina </title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- build:css css/style.css -->
+  <link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <!-- endbuild -->
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+  <!--[if lt IE 10]>
+    <div class="uncss-outdatedbrowser">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://outdatedbrowser.com">upgrade your browser</a> to improve your experience.
+    </div>
+    <![endif]-->
+
+  <!-- LOADER-->
+  <div class="loader-p">
+    <img id="logo-r-t-c" class="loader-i" src="img/vuelve-renueva-cocina.png" alt="Renueva tu cocina - Santa Catalina">
+    <div class="loader"><img id="" src="img/vuelve-renueva-cocina.png" alt="Renueva tu cocina - Santa Catalina">
+    </div>
+    <div class="loader-t">CARGANDO ...</div>
+  </div>
+
+
+  <!-- LOADER-->
+  <header>
+    <span class="link-b-y-p"> <a href="terminos-condiciones.html"> Bases y premios </a> </span>
+
+    <span class=""> <a href="./"><i class="sprite sprite-santa-cata"></i> </a></span>
+
+    <img id="logo-r-t-c" src="img/vuelve-renueva-cocina.png" alt="Renueva tu cocina - Santa Catalina">
+  </header>
+
+
+  <img id="img-p" src="img/premios.png" alt="premios - Santa Catalina">
+
+
+  <div class="container">
+    <ul id="layer-m">
+
+      <!-- Home -->
+      <li id="l-home" class="panel-view">
+        <h1>Bienvenidos,</h1>
+        <p>Ya elegimos alimentarnos sano, ¡es hora de renovar nuestra cocina!</p>
+        <h2>PARTICIPA Y GANA </h2>
+        <form id="frm-dni" class="form-app">
+        <h3>INGRESA TU DNI</h3>
+          <div class="form-group">
+            <label for="textndni" class="control-label col-xs-4"> <i class="sprite sprite-icon-dni"></i> Nª DNI</label>
+            <div class="col-xs-8">
+              <input value="" type="text" class="form-control" placeholder="Documento de Identidad" name="textndni" id="textndni" maxlength="8">
+            </div>
+          </div>
+          <div class="form-group" style="text-align:center;">
+            <br>
+            <button type="submit" class="btn btn-s">EMPEZAR</button>
+          </div>
+        </form>
+        <form id="frm-registration" class="form-app">
+        <h3>INGRESA TUS DATOS</h3>
+          <div class="form-group">
+            <label for="textfullname" class="control-label col-xs-4"> <i class="sprite sprite-ico-user"></i>NOMBRE</label>
+            <div class="col-xs-8">
+              <input type="text" class="form-control" placeholder="Nombre y apellidos completos" name="textfullname" id="textfullname">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textmail" class="control-label col-xs-4"> <i class="sprite sprite-ico-mail"></i>Correo</label>
+            <div class="col-xs-8">
+              <input type="text" class="form-control" placeholder="Dirección de Correo electrónico" name="textmail" id="textmail">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textphone" class="control-label col-xs-4"> <i class="sprite sprite-ico-phone"></i>Telefono</label>
+            <div class="col-xs-8">
+              <input type="text" class="form-control" placeholder=" Telefono / Celular" name="textphone" id="textphone" maxlength="15">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="textphone" class="control-label col-xs-4"> </label>
+            <div class="col-xs-8">
+              <textarea class="form-control" placeholder=" Dirección completa " name="textdireccion" id="textdireccion"></textarea>
+            </div>
+          </div>
+          <div class="form-group" style="text-align:center;">
+            <br>
+            <button type="submit" class="btn btn-s">CONTINUAR</button>
+          </div>
+        </form>
+      </li>
+
+      <!-- Ingreso codigo -->
+      <li id="l-code" class="space-top panel-view">
+        <h3> <span id="r-name"></span>,   EMPIEZA A GANAR</h3>
+        <p>¡Ingresa el código ubicado al reverso del empaque y participa por un premio instantáneo!</p>
+        <form id="frm-c" class="form-app">
+          <div class="form-group">
+            <div class="ui-center f-full col-xs-12">
+              <input type="text" class="form-control col-xs-6 form-control-mini" placeholder="Ingresar codigo de empaque" value="" name="txtcode" id="txtcode">
+            </div>
+          </div>
+
+          <div class="form-group" style="text-align:center;">
+            <br>
+            <button type="submit" class="btn btn-s" style="margin-left:0em;">CONTINUAR</button>
+          </div>
+        </form>
+        <p>
+          Además de tener la opción de ganar premios instantáneos, puedes completar la palabra “SANTA” para poder ingresar al sorteo por xxx .
+        </p>
+        <br>
+        <p>
+          <b> ¡Te faltan solo <b id="txtletters"></b> letras! </b>
+        </p>
+
+        <div id="letter-stack-first" style="padding: 20px 0;">
+          <img class="letter-s" src="img/s.png" height="89" width="89">
+          <img class="letter-a" src="img/a.png" height="89" width="89">
+          <img class="letter-n" src="img/n.png" height="89" width="89">
+          <img class="letter-t" src="img/t.png" height="89" width="89">
+          <img class="letter-v" src="img/a.png" height="89" width="89">
+        </div>
+      </li>
+
+      <!-- Mensaje Ganó -->
+      <li id="l-msg-win" class="space-top panel-view">
+        <div class="border">
+          <h2>FELICITACIONES</h2>
+          <h3>¡GANASTE UNA <span id="txtwin">%S</span>! </h3>
+        </div>
+
+        <br>
+
+        <p>Dirígete a las oficinas de Santa Catalina ubicadas en xxxx, con tu D.N.I. y solicita tu premio.</p>
+        ¡TE ESPERAMOS!
+        <p>
+          <br>
+          <a href="./" id="btn-win" class="btn btn-s" style="margin-left:0em;">FINALIZAR</a>
+        </p>
+
+        <p>
+          <b>¡Comparte tu buena suerte y que tus amigos también ganen! </b>
+        </p>
+
+        <center> <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http%3A%2F%2Fwww.molicom.com.pe%2Fllantas%2Fproducto%2Fg4b-e4%2F&amp;p[title]=G4B (E-4)&amp;p[summary]=Banda de rodamiento profunda y amplia área de contacto, que ofrecen excelente adherencia, buena resistencia a los cortes y desgaste, mejorando su trabajo en rutas de alta agresividad. Tiene una larga vida útil y es durable.&amp;p[images][0]=http%3A%2F%2Fwww.molicom.com.pe%2Fllantas%2Fasset%2Fmultimedia%2F2014%2F11%2FG-4B1.png" target="_blank" onclick="window.open(this.href, this.target, 'width=600,height=400'); return false;"><i class="sprite sprite-fb"></i></a> </center>
+      </li>
+
+      <!-- Sigue participando -->
+      <li id="l-msg-loser" class="space-top panel-view">
+        <h2>¡UPS! </h2>
+        <h3>¡No te desanimes!,</h3>
+        <p>aún puedes participar en el sorteo por premios increíbles si completas la palabra “SANTA”</p>
+        <p>
+          <br>
+          <a href="./" class="btn btn-s" style="margin-left: 0em;">FINALIZAR</a>
+        </p>
+      </li>
+
+      <!-- Letra -->
+      <li id="l-show-letters" class="space-top panel-view">
+        <p>Colecciona letras, colecciona salud, colecciona premios.</p>
+        <h2>¡Felicidades! Has ganado la letra: </h2>
+
+        <center>
+          <img id="letter" class="addletters" src="css/img/spritesheet/a.png">
+        </center>
+
+        <p class="border_bottom"> Sigue juntando más letras y forma la palabra ganadora.</p>
+
+        <a href="./" class="btn btn-s" style="margin-left: 0em;">FINALIZAR</a>
+
+        <div id="letter-stack-last" style="padding: 20px 0;">
+          <img class="letter-s" src="img/s.png" height="89" width="89">
+          <img class="letter-a" src="img/a.png" height="89" width="89">
+          <img class="letter-n" src="img/n.png" height="89" width="89">
+          <img class="letter-t" src="img/t.png" height="89" width="89">
+          <img class="letter-v" src="img/a.png" height="89" width="89">
+        </div>
+
+        <p>Que todos vean que te faltan pocas letras.</p>
+        <center> <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http%3A%2F%2Fwww.molicom.com.pe%2Fllantas%2Fproducto%2Fg4b-e4%2F&amp;p[title]=G4B (E-4)&amp;p[summary]=Banda de rodamiento profunda y amplia área de contacto, que ofrecen excelente adherencia, buena resistencia a los cortes y desgaste, mejorando su trabajo en rutas de alta agresividad. Tiene una larga vida útil y es durable.&amp;p[images][0]=http%3A%2F%2Fwww.molicom.com.pe%2Fllantas%2Fasset%2Fmultimedia%2F2014%2F11%2FG-4B1.png" target="_blank" onclick="window.open(this.href, this.target, 'width=600,height=400'); return false;"><i class="sprite sprite-fb"></i></a> </center>
+      </li>
+
+      <!-- Letras completas -->
+      <li id="l-show-letters-completed" class="space-top panel-view">
+        <h2>Felicidades, ya estás participando el sorteo por xxxx</h2>
+
+        <a href="./" class="btn btn-s" style="margin-left: 0em;">FINALIZAR</a>
+
+        <div id="letter-stack-completed" style="padding: 20px 0;">
+          <img class="letter-s" src="img/s.png" height="89" width="89">
+          <img class="letter-a" src="img/a.png" height="89" width="89">
+          <img class="letter-n" src="img/n.png" height="89" width="89">
+          <img class="letter-t" src="img/t.png" height="89" width="89">
+          <img class="letter-v" src="img/a.png" height="89" width="89">
+        </div>
+
+        <p>Que todos vean que te completaste la palabra ganadora.</p>
+        <center> <a href="http://www.facebook.com/sharer.php?s=100&amp;p[url]=http%3A%2F%2Fwww.molicom.com.pe%2Fllantas%2Fproducto%2Fg4b-e4%2F&amp;p[title]=G4B (E-4)&amp;p[summary]=Banda de rodamiento profunda y amplia área de contacto, que ofrecen excelente adherencia, buena resistencia a los cortes y desgaste, mejorando su trabajo en rutas de alta agresividad. Tiene una larga vida útil y es durable.&amp;p[images][0]=http%3A%2F%2Fwww.molicom.com.pe%2Fllantas%2Fasset%2Fmultimedia%2F2014%2F11%2FG-4B1.png" target="_blank" onclick="window.open(this.href, this.target, 'width=600,height=400'); return false;"><i class="sprite sprite-fb"></i></a> </center>
+      </li>
+
+
+    </ul>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <!-- build:js js/main.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery.validation/dist/jquery.validate.js"></script>
+  <script src="js/language/ES.js"></script>
+  <script src="js/main.js"></script>
+  <!-- endbuild -->
+
+</body>
+
+</html>

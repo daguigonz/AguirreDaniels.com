@@ -1,0 +1,11 @@
+// Functions
+// ---------
+
+// Default font size in pixels if not overridden.
+$base-font-size: 16;
+
+// Convert PX units to EMs.
+// E.g: margin-right: pem(17);
+@function pem($px, $base: $base-font-size) {
+  @return #{$px / $base}em;
+}

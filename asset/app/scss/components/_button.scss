@@ -1,0 +1,23 @@
+// Button
+// ------
+
+.button {
+  @extend .pure-button;
+  color: #fff;
+
+  &.primary {
+    background-color: #2c82c9;
+  }
+
+  &.success {
+    background-color: #2cc990;
+  }
+
+  &.warning {
+    background-color: #fcb941;
+  }
+
+  &.danger {
+    background-color: #fc6042;
+  }
+}

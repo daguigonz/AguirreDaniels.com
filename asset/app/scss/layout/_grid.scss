@@ -1,0 +1,23 @@
+// Grid
+// ----
+
+.content-wrapper {
+  background-color: #fff;
+  min-height: 12%;
+  position: absolute;
+  top: 87%;
+  width: 100%;
+  z-index: 2;
+}
+
+.content-head {
+  font-weight: 400;
+  letter-spacing: .1em;
+  margin: 2em 0 1em;
+  text-transform: uppercase;
+}
+
+.l-box,
+.l-box-lrg {
+  padding: 2em;
+}

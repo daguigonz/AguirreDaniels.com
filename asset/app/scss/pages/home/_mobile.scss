@@ -1,0 +1,82 @@
+// HOME Mobile screen
+// ------------------
+// Notes:
+// - Uses `.uncss-` prefix class to ignore classes by `grunt-uncss` task in `build` mode.
+
+// Some imports
+@import '../../helpers/variables';
+@import '../../vendors/utilities';
+
+// Small Sreen : ≥ 568px
+// ----------------------
+@media screen and (max-width: 35.5em) {
+  // Code goes here
+
+
+  header {
+    height: auto;
+
+    .sprite-santa-cata {
+      position: static;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .link-b-y-p {
+      position: static;
+      text-align: right;
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+
+  #logo-r-t-c {
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  #img-p {
+    margin-top: auto;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  .container #layer-m {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .space-top {
+    padding-top: 0;
+  }
+
+  #letter-stack-first,
+  #letter-stack-last {
+    img {
+      width: 52px;
+      height: auto;
+    }
+  }
+
+  .container #layer-m li {
+    font-size: 16px;
+  }
+
+  .form-control-mini {
+    width: 89%;
+  }
+
+  .btn-s {
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+  }
+}
+

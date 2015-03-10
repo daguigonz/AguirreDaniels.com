@@ -1,0 +1,14 @@
+// HOME Medium screen
+// ------------------
+// Notes:
+// - Uses `.uncss-` prefix class to ignore classes by `grunt-uncss` task in `build` mode.
+
+// Some imports
+@import '../../helpers/variables';
+@import '../../vendors/utilities';
+
+// Medium Sreen : ≥ 768px
+// -----------------------
+@media screen and (min-width: 48em) {
+  // Code goes here
+}

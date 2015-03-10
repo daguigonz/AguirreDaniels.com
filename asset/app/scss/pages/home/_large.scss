@@ -1,0 +1,14 @@
+// HOME Large screen
+// -----------------
+// Notes:
+// - Uses `.uncss-` prefix class to ignore classes by `grunt-uncss` task in `build` mode.
+
+// Some imports
+@import '../../helpers/variables';
+@import '../../vendors/utilities';
+
+// Large Sreen : ≥ 1024px
+// -----------------------
+@media screen and (min-width: 64em) {
+  // Code goes here
+}

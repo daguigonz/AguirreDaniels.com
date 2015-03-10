@@ -1,0 +1,12 @@
+// Input
+// ------
+
+.textbox {
+  @extend .pure-form-stacked;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px #ddd;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: .5em .6em;
+}

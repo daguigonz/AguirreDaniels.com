@@ -1,0 +1,110 @@
+// utilities.scss v1.0.0
+// Some utilities mixins.
+// MIT License | Jose Luis Quintana - joseluisquintana.pe
+
+// Transition element
+@mixin transition($value: all .3s ease) {
+  -webkit-transition: $value;
+  -moz-transition: $value;
+  -ms-transition: $value;
+  -o-transition: $value;
+  transition: $value;
+}
+
+// Border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Center table
+@mixin center-table {
+  display: table;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  table-layout: fixed;
+  text-align: center;
+  top: 0;
+  @include square(100%);
+}
+
+// Center table cell
+@mixin center-table-cell {
+  display: table-cell;
+  left: 0;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+}
+
+// Center some element in absolute position
+@mixin absolute-center-xy($width, $height: 0) {
+  left: 50%;
+  margin-left: -($width / 2);
+
+  @if $height == 0 {
+    $height: $width;
+  }
+
+  margin-top: -($height / 2);
+  position: absolute;
+  top: 50%;
+}
+
+// Center some element in relative position
+@mixin relative-center-xy($parent-width, $parent-height, $width, $height) {
+  left: ($parent-width - $width) / 2;
+  position: relative;
+  top: ($parent-height - $height) / 2;
+}
+
+// Create a square
+@mixin square($size) {
+  height: $size;
+  width: $size;
+}
+
+// Create a circle
+@mixin circle($radius, $center-absolute: false) {
+  @if $center-absolute {
+    @include absolute-center-xy($radius);
+  }
+
+  @include square($radius);
+  @include border-radius($radius);
+}
+
+// Square center in xy
+@mixin square-center-xy($size, $gutter: 0) {
+  margin-left: $gutter / 2;
+  margin-top: $gutter / 2;
+  @include square($size - $gutter);
+}
+
+// Circle center in xy
+@mixin circle-center-xy($radius, $gutter: 0) {
+  @include square-center-xy($radius, $gutter);
+  @include border-radius($radius);
+}
+
+// Embed CSS3 calc function for some property.
+@mixin calc($property, $value) {
+  #{$property}: -webkit-calc(#{$value});
+  #{$property}: -moz-calc(#{$value});
+  #{$property}: -ms-calc(#{$value});
+  #{$property}: -o-calc(#{$value});
+  #{$property}: calc(#{$value});
+}
+
+// CSS3 Vertical align
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

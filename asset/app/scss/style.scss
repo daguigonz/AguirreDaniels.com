@@ -1,0 +1,42 @@
+// Main imports
+// ------------
+
+@charset 'UTF-8';
+
+// Variables
+@import 'helpers/variables';
+
+// Mixins and functions
+@import 'helpers/mixins';
+@import 'helpers/functions';
+
+// Pure CSS Framework (default)
+// Note: It can replace it to another CSS framework.
+@import '../bower_components/boostrap-sass/assets/stylesheets/bootstrap';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+
+// Layout
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/form';
+@import 'layout/sidebar';
+
+// Helpers (classes)
+@import 'helpers/helpers';
+
+// Components
+@import 'components/outdatedbrowser';
+@import 'components/button';
+@import 'components/input';
+@import 'components/navigation';
+@import 'components/splash';
+
+// Pages
+@import 'pages/pages';
+
+// Themes
+@import 'themes/theme';

@@ -1,0 +1,50 @@
+// Navigation
+// ----------
+
+@import '../helpers/variables';
+
+.splash-container {
+  background-color: $blue;
+  height: 75%;
+  left: 0;
+  overflow: hidden;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  .splash {
+    bottom: 0;
+    height: 50%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    width: 50%;
+  }
+
+  .splash-head {
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 300%;
+    font-weight: normal;
+    line-height: 1em;
+    margin-bottom: .3em;
+    padding: 0 0 .6em;
+  }
+
+  .splash-subhead {
+    color: #fff;
+    letter-spacing: .05em;
+    opacity: .8;
+  }
+
+  .button {
+    color: $blue;
+    font-size: 120%;
+  }
+}

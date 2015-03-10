@@ -1,0 +1,29 @@
+// Typography
+// ----------
+
+@font-face {
+    font-family: 'brandon_textbold';
+    src: url('../fonts/BrandonText-Bold-webfont.eot');
+    src: url('../fonts/BrandonText-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonText-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/BrandonText-Bold-webfont.woff') format('woff'),
+         url('../fonts/BrandonText-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/BrandonText-Bold-webfont.svg#brandon_textbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'brandon_textlight';
+    src: url('../fonts/BrandonText-Light-webfont.eot');
+    src: url('../fonts/BrandonText-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BrandonText-Light-webfont.woff2') format('woff2'),
+         url('../fonts/BrandonText-Light-webfont.woff') format('woff'),
+         url('../fonts/BrandonText-Light-webfont.ttf') format('truetype'),
+         url('../fonts/BrandonText-Light-webfont.svg#brandon_textlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
