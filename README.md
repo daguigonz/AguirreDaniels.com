@@ -1,11 +1,12 @@
 # AguirreDaniels.com
-Portafolio y proyecto personal
+Portafolio y proyecto personal 
+### Features
 
 * [HTML5 Boilerplate](http://html5boilerplate.com/) front-end template
 * [Gruntjs](http://gruntjs.org/) for Server and Build tasks
 * [Bower](http://bower.io/) for dependencies managment
 * [Sass](http://http://sass-lang.com/) pre-processor (With [libsass](https://github.com/sass/libsass) compiler)
-* [Pure](http://purecss.io/) CSS Framework v5.0
+* [Foundation](http://foundation.zurb.com/) CSS Framework v5.0
 * [jQuery](http://jquery.com/) JS Framework
 * [Modernizr](http://modernizr.com/) JS library
 
@@ -23,7 +24,7 @@ It's necessary to install the following packages before:
 Clone the repository:
 
 ```sh
-$ git clone https://github.com/joseluisq/frontier.git
+$ git clone https://github.com/daguigonz/AguirreDaniels.com.git
 ```
 Enter to your project:
 
