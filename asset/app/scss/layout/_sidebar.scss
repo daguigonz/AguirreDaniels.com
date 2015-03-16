@@ -1,2 +1,40 @@
 // Sidebar
 // -------
+#my-sidebar-menu{
+	ul{
+		margin-left:0em;
+		margin-top:0.5em;
+
+		li{
+			list-style: none;
+			padding:0em 0em 0em 0.5em;
+
+			a{
+				color:$dark !important;
+				font-size:14px;
+				text-transform:uppercase;
+				text-decoration: none;
+				width:100%;
+				display:block;
+				height-line:10px;
+			}
+
+		&:hover{
+				background:$dark !important;
+
+				a{
+					color:$white !important;
+				}
+
+			}
+		}
+
+		.select{
+				background:$dark !important;
+
+				a{
+					color:$white !important;
+				}
+		}
+	}
+}

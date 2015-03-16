@@ -1,2 +1,21 @@
 // Header
 // ------
+// Off Canvas Tab Bar Variables
+
+// Branding
+#logo{
+	font-family: $my-font;
+	font-size:30px;
+	text-decoration: none;
+  line-height: 1.7em;
+  color:#fff !important;
+  text-decoration: underline;
+}
+
+#logo:hover{
+  text-decoration: underline;
+}
+
+.tab-bar{
+	background:$dark !important;
+}

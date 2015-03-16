@@ -6,7 +6,15 @@ $gray: #7f8c8d !default;
 $blue: #2c82c9 !default;
 $midnight-blue: darken($blue, 20%) !default;
 $dark-blue: darken($blue, 50%) !default;
+$dark: #000000 !default;
+$lead: #606067 !default;
+$lead2: #a5a6a8 !default;
+$white: #ffffff !default;
+
 
 // Font colors
 $font-color: $gray !default;
 $font-heading-color: $midnight-blue !default;
+
+// Fuentes
+$my-font: 'DINNextLTProRegular';

@@ -1,15 +1,41 @@
 'use strict';
-
-$(function() {
-
-  // API
-  var api = 'http://renueva-tu-cocina.lnmclient.com/back/api';
-  // var api = 'http://192.168.1.77/works/santacatalina-renueva-tu-cocina/back/api';
-  var k = '2a6d8d4c4c795085716c074e52a0a81ba6d236d3';
-  var userData = null;
-
+ 
+$(document).foundation({
+  offcanvas : {
+    // Sets method in which offcanvas opens.
+    // [ move | overlap_single | overlap ]
+    open_method: 'move', 
+    // Should the menu close when a menu link is clicked?
+    // [ true | false ]
+    close_on_click : false
+  }
 });
 
-(function($) {
+  var brick = new brickwork("#brickwork");
+  brick.reset({
+    selector: '.my-item-post',
+    animate: true,
+    cellW: 200,
+    cellH: 'auto',
+    onResize: function() {
+      brick.fitWidth();
+    }
+  });
+  
+  var images = brick.container.find('.my-item-post');
+  var length = images.length;
+  images.css({visibility: 'hidden'});
+  images.find('img')
+  .error(function() {
+    -- length;
+  })
+  .load(function() {
+    -- length;
+    if (!length) {
+      setTimeout(function() {
+        images.css({visibility: 'visible'});
+        brick.fitWidth();
+      }, 505);
+    }
+  });
  
- }(jQuery));
